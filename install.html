@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install guide · Shorts Studio</title>
+<meta name="description" content="Install Shorts Studio on Windows in four steps: download, get past the Windows warning, choose fast or custom install, and connect Claude Code.">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="install">
+<div class="wrap">
+<nav>
+ <a class="brand" href="index.html"><span class="logo"><img src="assets/img/logo.svg" width="22" height="22" alt=""></span>Shorts Studio</a>
+ <div class="links"><a href="index.html#how">How it works</a><a href="index.html#need">What you need</a><a href="install.html" aria-current="page">Install guide</a></div>
+ <div class="nav-cta"><a class="btn ghost sm" href="connect.html">Open the app</a><a class="btn primary sm" data-download href="#">Download for Windows</a></div>
+</nav>
+
+<main>
+<div class="head">
+ <span id="dl-note" class="pill green hidden">✓ ShortsStudio-Setup.exe is downloading</span>
+ <h1 style="font-size:52px">Install in four steps.</h1>
+ <p class="lead">About five minutes. You only do this once; after that the app updates itself.</p>
+</div>
+
+<div class="row">
+ <div class="num">1</div>
+ <div><h3>Download the installer</h3><p>If your download didn't start, <a data-download href="#">download ShortsStudio-Setup.exe</a>.</p><p class="small">Windows 10 or 11, 64-bit.</p></div>
+ <div></div>
+</div>
+
+<div class="row">
+ <div class="num">2</div>
+ <div><h3>Get past the Windows warning</h3><p>Open the file. Windows shows a blue "Windows protected your PC" box because the app is new and not signed yet.</p><p>Click <b>More info</b>, then <b>Run anyway</b>. You only see this once.</p></div>
+ <figure class="ss" style="margin:0" aria-label="Illustration of the Windows warning box">
+  <h4>Windows protected your PC</h4>
+  <p>Microsoft Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk.</p>
+  <p>App: ShortsStudio-Setup.exe<br>Publisher: Unknown publisher</p>
+  <div class="btns"><span class="b hi">Run anyway</span><span class="b">Don't run</span></div>
+  <figcaption style="color:#E3ECFF;font-size:13px;margin-top:14px">Illustration. "Run anyway" appears after you click "More info".</figcaption>
+ </figure>
+</div>
+
+<div class="row">
+ <div class="num">3</div>
+ <div><h3>Choose fast or custom install</h3><p><b>Fast install</b> puts everything in the usual places. Click Install and you're done.</p><p><b>Custom install</b> lets you pick where the app goes and where your projects and renders are saved. Renders get big, so a roomy drive helps.</p></div>
+ <figure class="inst" style="margin:0" aria-label="Illustration of the installer">
+  <div class="top">Shorts Studio Setup</div>
+  <div class="body">
+   <div class="opt"><div class="radio"></div><div><b>Fast install</b><span>App and projects go in the default folders.</span></div></div>
+   <div class="opt on"><div class="radio"></div><div style="flex:1;min-width:0"><b>Custom install</b><span>Pick both folders yourself.</span>
+    <div class="lab">App folder</div><div class="field"><span class="in">C:\Users\you\AppData\Local\Programs\Shorts Studio</span><span class="br">Browse</span></div>
+    <div class="lab">Projects and renders</div><div class="field"><span class="in">D:\Shorts Studio Projects</span><span class="br">Browse</span></div>
+   </div></div>
+  </div>
+  <div class="foot"><span class="btn ghost sm">Cancel</span><span class="btn violet sm">Install</span></div>
+ </figure>
+</div>
+
+<div class="row">
+ <div class="num">4</div>
+ <div><h3>Connect your Claude plan</h3><p>Shorts Studio uses Claude Code with your own Pro or Max plan. Open PowerShell and run these two lines. The second one opens Anthropic's sign-in page in your browser.</p><p class="small">The app checks this for you on first start and shows the same steps if anything is missing.</p></div>
+ <div class="check">
+  <div class="term"><code>irm https://claude.ai/install.ps1 | iex</code><button type="button" data-copy="irm https://claude.ai/install.ps1 | iex">Copy</button></div>
+  <div class="term"><code>claude auth login</code><button type="button" data-copy="claude auth login">Copy</button></div>
+  <div class="ck" style="margin-top:8px"><span>Claude Code installed</span><span class="pill green">✓ Found</span></div>
+  <div class="ck"><span>Signed in with your plan</span><span class="pill green">✓ Signed in</span></div>
+ </div>
+</div>
+
+<div class="card done-card">
+ <div><h3>All set? Open Shorts Studio.</h3><p class="small" style="margin:0">It opens in your browser at localhost:4870 and sits in the tray while it runs.</p></div>
+ <a class="btn violet" href="connect.html?auto=1">Open Shorts Studio</a>
+</div>
+</main>
+
+<footer><span>Shorts Studio · Powered by Claude. Not made or endorsed by Anthropic.</span><span><a href="index.html">Home</a> · <a href="connect.html">Open the app</a></span></footer>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

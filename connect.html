@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Shorts Studio</title>
+<meta name="description" content="Open the Shorts Studio app installed on your Windows PC.">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="connect">
+<div class="wrap">
+<nav>
+ <a class="brand" href="index.html"><span class="logo"><img src="assets/img/logo.svg" width="22" height="22" alt=""></span>Shorts Studio</a>
+ <div class="links"><a href="index.html#how">How it works</a><a href="index.html#need">What you need</a><a href="install.html">Install guide</a></div>
+ <div class="nav-cta"><a class="btn primary sm" href="install.html?dl=1">Download for Windows</a></div>
+</nav>
+
+<main class="center">
+ <div class="card box" aria-live="polite">
+  <div class="appicon"><img src="assets/img/logo.svg" width="38" height="38" alt=""></div>
+
+  <div id="state-ready">
+   <h2>Open Shorts Studio</h2>
+   <p class="lead" style="font-size:17px">The app runs on your PC. This button wakes it up and opens it in a new tab.</p>
+   <div style="margin-top:28px"><button type="button" class="btn violet" style="padding:16px 30px;font-size:17px" data-open-app>Open Shorts Studio</button></div>
+   <p class="small" style="margin-top:18px">Opens localhost:4870 on your PC. Nothing is sent to this website.</p>
+  </div>
+
+  <div id="state-opening" class="hidden">
+   <h2>Opening Shorts Studio…</h2>
+   <p class="lead" style="font-size:17px">Your browser asks once whether this site may open the app. Tick "Always allow" so next time it opens straight away.</p>
+   <div style="margin-top:28px"><span class="pill violet" style="font-size:15px;padding:10px 16px"><span class="spin"></span>Waiting for the app</span></div>
+  </div>
+
+  <div id="state-opened" class="hidden">
+   <h2>Shorts Studio is open</h2>
+   <p class="lead" style="font-size:17px">Look for the new tab at localhost:4870. You can close this page.</p>
+   <div style="margin-top:28px"><button type="button" class="btn ghost" data-open-app>Open it again</button></div>
+  </div>
+ </div>
+
+ <div id="help" class="hidden" style="width:100%;max-width:620px">
+  <div class="card" style="margin-top:18px;padding:22px 26px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-color:#F3D2A2;background:#FFF8EE">
+   <div><h3 style="font-size:18px;margin:0 0 4px">Nothing happened?</h3><p class="small" style="margin:0;color:var(--sub)">Shorts Studio is probably not installed on this PC yet.</p></div>
+   <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn primary sm" href="install.html?dl=1">Download for Windows</a><button type="button" class="btn ghost sm" data-open-app>Try again</button></div>
+  </div>
+  <div class="tips">
+   <div class="card"><b>Clicked Cancel by mistake?</b>Press Try again and choose Open Shorts Studio in the browser box.</div>
+   <div class="card"><b>Already installed?</b>Open it from the Start menu or the tray icon. Shorts Studio runs on Windows 10 and 11 only.</div>
+  </div>
+ </div>
+</main>
+
+<footer><span>Shorts Studio · Powered by Claude. Not made or endorsed by Anthropic.</span><span><a href="index.html">Home</a> · <a href="install.html">Install guide</a></span></footer>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
