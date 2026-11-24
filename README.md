@@ -46,6 +46,5 @@ The `.exe` is not stored in this repo. It's attached to this repo's GitHub Relea
 ## Known issues
 
 - No installer has been released yet, so the download buttons lead to a GitHub 404 for now.
-- The döner frame in the hero is an upscaled phone screenshot and looks soft. Replace `assets/img/doner.webp` with a full-size frame from the render.
 - The Analyze card shows a hand-built table, not a screenshot of the app's Performance page.
 - The Windows warning and installer pictures on the install guide are illustrations, not real screenshots.
